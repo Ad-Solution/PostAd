@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement - Terms and Conditions & Privacy Policy</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="ad-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfrif4AY8rh8T1BHs0TD9zheTwAklu-JHnQpY9qh3P6cZlH-Q/viewform?usp=sf_link" method="GET">
+            <div class="agreement-section">
+                <h2>Agreement</h2>
+                
+                    <!-- Your terms and conditions content here -->
+                    <div class="terms-conditions">
+                        <h3>Terms and Conditions</h3>
+                        <p>1. Ad Content: All ads must comply with local, state, and federal laws. Ads containing offensive, illegal, or inappropriate content will be removed without notice.</p>
+                        <p>2. Accuracy: The advertiser is responsible for ensuring that all information provided in the ad is accurate and up-to-date.</p>
+                        <p>3. Payment: If there are fees for placing ads, payment must be made in full before the ad is published. Refunds are not available once the ad is live.</p>
+                        <p>4. Ad Duration: Ads will run for the duration specified by the advertiser during the submission process. Extensions can be requested, but additional fees may apply.</p>
+                        <p>5. Prohibited Items: Ads for certain items or services (e.g., firearms, illegal drugs, counterfeit goods) are strictly prohibited and will be removed immediately.</p>
+                        <p>6. Liability: The platform is not responsible for any transactions or disputes that arise from ads placed on the site. Advertisers and buyers are responsible for ensuring safe and legal transactions.</p>
+                        <p>7. Right to Refuse: The platform reserves the right to refuse any ad submission for any reason, at our discretion.</p>
+                        <p>8. Modification: The platform reserves the right to modify or remove any ad at any time without prior notice if it violates our terms or for any other reason deemed necessary.</p>
+                    </div>
+                
+
+                
+                    <!-- Your privacy policy content here -->
+                    <div class="privacy-policy">
+                        <h3>Privacy Policy</h3>
+                        <p>1. Data Collection: We collect personal information such as name, email address, and phone number when you submit an ad.</p>
+                        <p>2. Data Usage: This information is used to contact you about your ad and for administrative purposes. We do not sell or share your personal information with third parties.</p>
+                        <p>3. Data Security: We implement various security measures to protect your personal information. However, we cannot guarantee complete security of your data.</p>
+                        <p>4. Cookies: Our website may use cookies to enhance user experience and collect information about site usage.</p>
+                        <p>5. Third-Party Services: We may use third-party services (e.g., payment processors) that have their own privacy policies. We are not responsible for the practices of these third-party services.</p>
+                        <p>6. User Rights: You have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us directly.</p>
+                        <p>7. Changes to Policy: We reserve the right to update our privacy policy at any time. Changes will be posted on our website, and continued use of the service indicates acceptance of the new terms.</p>
+                    </div>
+    
+                
+
+                <!-- Agreement Checkbox -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Yes, I agree to the terms and conditions and the privacy policy.</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('ad-form').addEventListener('submit', function(event) {
+            var agreeCheckbox = document.getElementById('agree');
+            if (!agreeCheckbox.checked) {
+                alert('Please agree to the terms and conditions before submitting.');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>
